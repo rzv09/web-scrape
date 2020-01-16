@@ -75,7 +75,10 @@ def get_and_write_info(webPage, file):
 		print(price)
 
 		#price = divPrice.span.contents[0].split(",")
-		formatted_price = price[0] + price[1]
+		if len(price) == 1:
+			formatted_price = price[0]
+		else:
+			formatted_price = price[0] + price[1]
 
 		# slice vehicle info string
 
@@ -83,12 +86,16 @@ def get_and_write_info(webPage, file):
 		make_model = vehicle_info[5:]
 
 		spanMileage = container.find("span", "s-item__dynamic s-item__dynamicAttributes2")
-		mileage = spanMileage.contents[0][6:]
-		if len(mileage) > 4:
-			temp_mileage = mileage.split(",")
-			mileage = temp_mileage[0] + temp_mileage[1]
+		if spanMileage is None:
+			pass
+		else:
+			mileage = spanMileage.contents[0][6:]
+			if len(mileage) > 4:
+				temp_mileage = mileage.split(",")
+				mileage = temp_mileage[0] + temp_mileage[1]
 
-		file.write(make_model + "," + year + "," + formatted_price + "," + mileage + "\n")
+		file.write(make_model.split(",")[0] + "," + year + "," + formatted_price + "," + mileage + "\n")
+		print(make_model)
 		print([vehicle_info, formatted_price, mileage])
 
 
@@ -155,4 +162,6 @@ def main():
 	file = create_csv()
 	get_pages(soup, url, file)
 
-main()
+
+if __name__ == '__main__':
+    main()
