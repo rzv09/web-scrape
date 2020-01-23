@@ -47,7 +47,7 @@ def create_csv():
 	f = open(filename, "w")
 	# inspect the html code and add headers strings to the following variable
 
-	headers = "Vehicle_Type, Year, Price, Mileage\n"
+	headers = "Vehicle_Type,Year,Price,Mileage\n"
 	f.write(headers)
 
 	return f
