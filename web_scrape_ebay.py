@@ -1,9 +1,9 @@
 """
-scrapes single ebay page for cars
+description: This application collects data from ebay based on the search request:
+e.g. request such as "Honda Accord" will collect all the data (model, year of manufacturing,
+price, mileage) related to this make and model and write it to a csv file.
 
-! ADD FUNCTIONALITY FOR MULTIPLE EBAY PAGES !
-UPDATED: FUNCTIONALITY ADDED
-author: Raman Zatsarenko
+author: Raman Zatsarenko rzv0907101@gmail.com
 """
 
 
@@ -19,14 +19,14 @@ def get_url():
 	model = input("Please enter the vehicle model: ")
 	# make = "ford"
 	# model = "mustang"
-	url = "https://www.ebay.com/sch/i.html?_from=R40&_nkw=" \
-		  + make + "+" + model + "&_sacat=6001&LH_TitleDesc=0&rt=nc&LH_BIN=1&rt=nc&LH_ItemCondition=3000"
+	url = "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2499334.m570.l2632&_nkw=" \
+		  + make + "+" + model + "&_sacat=6001"
 	return url
 
 
 def parse_page(url):
 	"""
-
+	Parses the webpage into a BS object
 	"""
 	response = requests.get(url)
 
@@ -54,6 +54,12 @@ def create_csv():
 
 
 def get_and_write_info(webPage, file):
+	"""
+	writes all the necessary info to a csv file
+	:param webPage: webpage in a form of BS object
+	:param file: file to be written to
+	:return: None
+	"""
 
 	containers = webPage.findAll("div", {"class": "s-item__info clearfix"})
 	for container in containers:
@@ -105,11 +111,11 @@ def find_page_numbers(webPage):
 	:param webPage: parse tree, soup object
 	:return: list containing all numbers of pages
 	"""
-	liPages = webPage.findAll("li", {"class" : "x-pagination__li"})
-	pages = []
-	for page in liPages:
-		page_num = page.a.contents[0]
-		pages.append(page_num)
+	liPages = webPage.findAll("a", {"class" : "pagination__item"})
+
+	# insert the page numbers to the array based on the len of liPages list
+	pages = [i for i in range(1, len(liPages) + 1)]
+
 	print(pages)
 	return pages
 
@@ -126,7 +132,7 @@ def get_pages(webPage, url, file):
 		get_and_write_info(webPage, file)
 	else:
 		for page in pages:
-			current_url = url + "&_pgn=" + page
+			current_url = url + "&_pgn=" + str(page)
 			soup = parse_page(current_url)
 			get_and_write_info(soup, file)
 	file.close()
@@ -157,7 +163,14 @@ def test(webPage):
 
 
 def main():
+	"""
+	main function gets the url from user input,
+	creates a BS object, parses it, gets all the necessary data
+	and writes it to a csv
+	:return: None
+	"""
 	url = get_url()
+	print(url)
 	soup = parse_page(url)
 	file = create_csv()
 	get_pages(soup, url, file)
