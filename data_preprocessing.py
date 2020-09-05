@@ -37,12 +37,15 @@ def normalize_data(data):
     :param data: python list of valid str values
     :return: numpy array of normalized values
     """
-    normalized_data = numpy.empty([], float)
+    normalized_data = []
 
     for val in data:
         int_val = int(val[1:])/10000
-        numpy.append(normalized_data, int_val)
-    return normalized_data
+        # print(int_val)
+        normalized_data.append(int_val)
+    arr_normalized_data = numpy.array(normalized_data)
+    # print(normalized_data)
+    return arr_normalized_data
 
 def main():
     filename = 'vehicle_info.csv'
