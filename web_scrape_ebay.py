@@ -84,7 +84,13 @@ def get_and_write_info(webPage, file):
 		if len(price) == 1:
 			formatted_price = price[0]
 		else:
-			formatted_price = price[0] + price[1]
+			pos = 0
+			for ch in price[1]:
+				if ch == '.':
+					no_dot_price = price[1][:pos]
+					break
+				pos+=1
+			formatted_price = price[0] + no_dot_price
 
 		# slice vehicle info string
 
@@ -166,7 +172,7 @@ def main():
 	"""
 	main function gets the url from user input,
 	creates a BS object, parses it, gets all the necessary data
-	and writes it to a csv
+	and writes it to a сsv
 	:return: None
 	"""
 	url = get_url()
