@@ -47,15 +47,15 @@ Ford Mustang EcoBoost,2020,$30450, 10
 Ford Mustang EcoBoost Premium,2020,$39320, 3
 Ford Mustang EcoBoost,2020,$28714, 10
 Ford Mustang Ecoboost,2020,$25313, 0
-Ford Mustang EcoBoost,2020,$28710, 6
 Ford Mustang GT Premium,2020,$46357, 5
 Ford Mustang EcoBoost,2020,$26894, 10
-Ford Mustang GT Premium,2020,$45998, 5
+Ford Mustang EcoBoost,2020,$26894, 10
 Ford Mustang GT Premium,2020,$48172, 5
+Ford Mustang GT Premium,2020,$45998, 5
 Ford Mustang GT Premium,2020,$42704, 185
+Ford Mustang EcoBoost,2020,$27774, 10
 Ford Mustang Shelby GT350,2020,$67870, 0
 Ford Mustang GT Premium,2020,$43057, 0
-Ford Mustang EcoBoost,2020,$27774, 10
 Ford Mustang Carroll Shelby Signature Series 825+HP,2020,$132650, 0
 Ford Mustang EcoBoost,2020,$27566, 30
 Ford Mustang EcoBoost,2020,$26849, 11
@@ -71,12 +71,12 @@ Ford Mustang Ecoboost Premium,2020,$32069, 0
 Ford Mustang EcoBoost Premium,2020,$26780, 1394
 Ford Mustang Shelby GT350,2020,$72840, 0
 Ford Mustang GT Premium Performance Pack 2,2020,$48938, 0
-Ford Mustang Coupe,1967,$760.00, 964
+Ford Mustang Coupe,1967,$760, 964
 Ford Mustang Coupe,1965,$11188, 46800
 Ford Mustang ,1969,$100000, 14
 Ford Mustang GT,2005,$12500, 22822
-Ford Mustang EcoBoost,2020,$38755, 0
 Ford Mustang GT,1994,$3550, 101500
+Ford Mustang EcoBoost,2020,$38755, 0
 Ford Mustang ,1966,$6200, 84222
 Ford Mustang Ecoboost,2020,$25313, 0
 Ford Mustang ,1969,$8650, 67000
@@ -130,8 +130,8 @@ Ford Mustang GT,1990,$1000, 5000
 Ford Mustang ,1967,$24850, 1
 Ford Mustang GT,1992,$29900, 48980
 Ford Mustang ,2007,$58000, 25
-Ford Mustang ,1966,$28000, 11417
 Ford Mustang GT,1990,$24950, 53025
+Ford Mustang ,1966,$28000, 11417
 Ford Mustang ,1965,$32000, 55326
 Ford Mustang ,1967,$1225, 135096
 Ford Mustang GT,1990,$13500, 29165
@@ -145,12 +145,12 @@ Ford Mustang GT Premium,2018,$30100, 7994
 Ford Mustang GT,1986,$12300, 250
 Ford Mustang GT,2003,$9995, 161527
 Ford Mustang GT,2017,$10600, 5
-Ford Mustang Mach 1,1971,$6101, 93966
 Ford Mustang ,2004,$2000, 114100
 Ford Mustang GT,1985,$10100, 43671
 Ford Mustang ,1966,$12500, 74580
 Ford Mustang GT,2014,$29999, 23305
 Ford Mustang ,1969,$15100, 3000
+Ford Mustang Mach 1,1971,$6101, 93966
 Ford Mustang GT,2019,$39987, 6263
 Ford Mustang GT,1996,$4355, 74000
 Ford Mustang GT,2011,$5600, 90351
@@ -213,8 +213,8 @@ Ford Mustang ,1966,$24995, 12173
 Ford Mustang ,1970,$17997, 6048
 Ford Mustang Boss 302,1970,$20100, 64436
 Ford Mustang ,1967,$49975, 1800
-Ford Mustang ,1973,$25000, 66574
 Ford Mustang ,1965,$1025, 0
+Ford Mustang ,1973,$25000, 66574
 Ford Mustang ,2018,$22100, 2522
 Ford Mustang Fastback Restomod,1968,$30000, 231
 Ford Mustang SHELBY GT500,2020,$52500, 550
@@ -238,9 +238,9 @@ Ford Mustang Shelby GT,2007,$32995, 7786
 Ford Mustang ,1995,$9150, 10471
 Ford Mustang GT,2019,$41900, 6300
 Ford Mustang ELEANOR GT500,1967,$225000, 4500
+Ford Mustang ,1965,$25100, 27000
 Ford Mustang 2 door,1965,$10000, 84278
 Ford Mustang GT Coupe,1997,$7995, 55769
-Ford Mustang ,1965,$25100, 27000
 Ford Mustang Shelby GT500,1970,$70000, 16512
 Ford Mustang Boss 302,1969,$67500, 81721
 Ford Mustang LX,1988,$1075, 153000
@@ -249,15 +249,13 @@ Ford Mustang MOVIE CAR,2007,$85000, 6605
 Ford Mustang ,1971,$2550, 78217
 Ford Mustang 2 door,1967,$15200, 21616
 Ford Mustang GT,2002,$15000, 138
-Ford Mustang V6,2016,$11950, 25501
-Ford Mustang GT 5.0,2018,$32991, 27602
-Ford Mustang ,1966,$12100, 7766
-Ford Mustang 2 door,1967,$15200, 21616
 Ford Mustang GT,1983,$7000, 10000
 Ford Mustang GT,2002,$19900, 1981
+Ford Mustang V6,2016,$11950, 25501
 Ford Mustang Shelby GT500,2020,$99888, 58
 Ford Mustang ,1983,$1525, 600
-Ford Mustang Leather,2005,$760.00, 119200
+Ford Mustang GT 5.0,2018,$32991, 27602
+Ford Mustang Leather,2005,$760, 119200
 Ford Mustang GT Supercharged,1997,$5100, 30483
 Ford Mustang GT,1998,$10000, 41000
 Ford Mustang Shelby GT350,2019,$52100, 1261
@@ -268,37 +266,38 @@ Ford Mustang LX,1991,$17999, 70000
 Ford Mustang ,1989,$7600, 500
 Ford Mustang EcoBoost Premium,2017,$23600, 32581
 Ford Mustang GT,2008,$25000, 25237
+Ford Mustang GT,2019,$39371, 7488
 Ford Mustang GT,2003,$10000, 61155
 Ford Mustang Custom,2016,$10655, 38950
 Ford Mustang GT,2006,$15000, 34945
 Ford Mustang ,1969,$129900, 86000
-Ford Mustang V6,2011,$19977, 6168
+Ford Mustang ,2020,$40903, 0
 Ford Mustang ,1968,$17000, 500
 Ford Mustang Sports Roof,1970,$24400, 53968
 Ford Mustang ,1970,$47500, 72250
-Ford Mustang ,2020,$40903, 0
 Ford Mustang ,1967,$18600, 45170
-Ford Mustang Cobra,2003,$29000, 62240
+Ford Mustang GT,1995,$5000, 175750
 FORD Mustang ,1970,$48895, 62269
 Ford Mustang ,1985,$3900, 66000
-Ford Mustang ,2018,$24995, 11500
+Ford Mustang Cobra,2003,$29000, 62240
 Ford Mustang ,2014,$62000, 3000
+Ford Mustang ,1970,$18000, 893
 Ford Mustang ,1968,$139000, 5800
 Ford Mustang GT,1994,$3000, 146865
 Ford Mustang ,2007,$5100, 147600
 Ford Mustang ,2003,$20000, 42000
-Ford Mustang GT,1995,$5000, 175750
 Ford Mustang GT,2002,$10000, 120000
-Ford Mustang ,1970,$18000, 893
-Ford Mustang premium,2005,$5000, 180000
 Ford Mustang cobra,1979,$2000, 160680
-Ford Mustang ,1984,$2000, 158216
+Ford Mustang V6,2011,$19977, 6168
 Ford Mustang MACH 1 -- 351,1972,$10600, 81049
+Ford Mustang premium,2005,$5000, 180000
+Ford Mustang ,1984,$2000, 158216
 Ford Mustang ,1965,$15100, 152172
 Ford Mustang 2+2,1965,$36200, 99999
 Ford Mustang LX,1991,$7800, 124000
 Ford Mustang Pro Touring Convertible,1969,$20100, 54
 Ford Mustang Cobra,2003,$12000, 66000
+Ford Mustang ,1990,$19900, 30300
 Ford Mustang GT,1995,$17500, 12700
 Ford Mustang ,1967,$74000, 5800
 Ford Mustang ,1966,$39000, 0
@@ -316,7 +315,6 @@ Ford Mustang ,1988,$21800, 5000
 Ford Mustang Mach 1 Tribute,1971,$32000, 39650
 Ford Mustang Cobra SVT,1999,$6600, 822
 Ford Mustang ,1966,$26500, 63401
-Ford Mustang GT,2017,$39500, 6100
 Ford Mustang ,2004,$17995, 50753
 Ford Mustang Pro Touring,1966,$18200, 2058
 Ford Mustang Premium,2011,$16750, 32451
@@ -325,16 +323,17 @@ Ford Mustang Fastback Bullitt,1968,$134900, 98274
 Ford Mustang GT,2016,$50000, 24409
 Ford Mustang ,2012,$15000, 59650
 Ford Mustang ,2015,$32000, 36300
+Ford Mustang GT,2017,$39500, 6100
 Ford Mustang ,2012,$32500, 10700
 Ford Mustang ,1965,$25500, 8130
-Ford Mustang ,1967,$28000, 91124
 Ford Mustang ,1986,$15900, 48359
 Ford Mustang ,1973,$15200, 0
 Ford Mustang GT,2006,$39000, 5200
 Ford Mustang RACING STRIPES,1965,$19700, 153349
+Ford Mustang manual,1971,$22000, 1000
 Ford Mustang ,2005,$19900, 4421
 Ford Mustang ,1965,$35000, 99999
-Ford Mustang manual,1971,$22000, 1000
+FORD Mustang ,1966,$39995, 43670
 Ford Mustang ,1985,$1025, 1160
 Ford Mustang ,1973,$16900, 100405
 Ford Mustang ,1997,$4350, 73194
@@ -343,21 +342,19 @@ Ford Mustang Convertible,1964,$59900, 33593
 Ford Mustang ,1965,$59499, 985
 Ford Mustang ,1971,$70000, 67037
 Ford Mustang ,1964,$2500, 0
-Ford Mustang ,1965,$29247, 31869
 Ford Mustang MACH 1,2004,$17500, 25743
+Ford Mustang ,1965,$29247, 31869
 Ford Mustang ,1970,$13000, 124000
 Ford Mustang ,1965,$42000, 60000
 Ford Mustang ,1981,$37500, 382
-Ford Mustang ,1965,$24000, 13175
-Ford Mustang ,1965,$42000, 60000
  Mustang Coupe,Ford,$5941, 51032
-Ford Mustang ,1965,$24000, 13175
+Ford Mustang GT Coupe,2017,$28995, 30000
 Ford Mustang GT Coupe,2017,$28995, 30000
 Ford Mustang ,1995,$13900, 67000
 Ford Mustang ,2007,$8000, 112000
-Ford Mustang SHELBY GT500,2007,$31499, 12500
 Ford Mustang Premium,2007,$14995, 44103
-Ford Mustang ,2008,$26.00, 158000
+Ford Mustang SHELBY GT500,2007,$31499, 12500
+Ford Mustang ,2008,$26, 158000
 Ford Mustang EcoBoost,2016,$19746, 51855
 Ford Mustang GT Premium,2015,$47000, 12434
 Ford Mustang GT 2dr Convertible,1988,$7200, 40481
@@ -385,8 +382,8 @@ Ford Mustang Bullitt,2001,$21900, 6087
 Ford Mustang ,2005,$5500, 96000
 Ford Mustang ,2015,$35000, 14100
 Ford Mustang Cobra,1997,$22500, 12474
-Ford Mustang Cobra,2003,$10500, 48400
 Ford Mustang BULLITT,2001,$6000, 67935
+Ford Mustang Cobra,2003,$10500, 48400
 Ford Mustang Shelby GT/SC,2007,$44900, 2946
 Ford Mustang Supersnake,2017,$99900, 929
 Ford Mustang ,1973,$15100, 27544
@@ -399,15 +396,14 @@ Ford Mustang ,1970,$40000, 43650
 Ford Mustang ,1990,$8900, 74000
 Ford Mustang COBRA SVT,2003,$22500, 48935
 Ford Mustang Premium,2017,$23000, 25627
-Ford Mustang Lx,1984,$710.00, 30117
+Ford Mustang Lx,1984,$710, 30117
 Ford Mustang 2dr Conv,1966,$11021, 36239
 Ford Mustang GT500,2013,$54500, 15500
 Ford Mustang Boss 302,2012,$24995, 87976
-Ford Mustang Mrs. B,1966,$21750, 93500
 Ford Mustang Shelby,2013,$141000, 3547
+Ford Mustang Mrs. B,1966,$21750, 93500
 Ford Mustang Shelby GT500,2008,$41999, 8008
 Ford Mustang ,1971,$22500, 79650
-Ford Mustang Mach 1 Tribute,1971,$500.00, 25879
 Ford Mustang ,2002,$16900, 12500
 Ford Mustang SHELBY GT500,2013,$46900, 21700
 Ford Mustang ,2006,$25900, 36910
@@ -415,40 +411,44 @@ Ford Mustang GT Premium RARE CAR!,2018,$36997, 20303
 Ford Mustang ,1966,$29500, 34000
 Ford Mustang ,1936,$43200, 12500
 Ford Mustang ,1971,$15000, 62560
+Ford Mustang Shelby GT350R,2017,$69950, 1196
 Ford Mustang ,2008,$32800, 5940
 Ford Mustang SHELBY GT350,2016,$52000, 7500
-Ford Mustang Mach-E Premium,2021,$58800, 0
 Ford Mustang ,1965,$21000, 26002
+Ford Mustang Mach-E Premium,2021,$58800, 0
 Ford Mustang ,2016,$50999, 11814
 Ford Mustang ,1973,$9999, 57000
 Ford Mustang ,1955,$12100, 240
 Ford Mustang SHELBY GT500,2013,$74950, 13000
-Ford Mustang Shelby GT350R,2017,$69950, 1196
 Ford Mustang Shelby GT350H,1966,$185995, 94363
 Ford Mustang Convertible Custom,1968,$54950, 1621
 Ford Mustang EcoBoost,2016,$21985, 44923
 Ford Mustang GT/CS,2011,$22000, 69000
-Ford Mustang GLX,1984,$355.00, 134862
+Ford Mustang GLX,1984,$355, 134862
 Ford Mustang ,2004,$5800, 117547
 Ford Mustang ,2014,$51987, 13898
 Ford Mustang ,1971,$22497, 76290
 Ford Mustang Cobra 5MT,1997,$23900, 17622
 Ford Mustang ,1966,$48500, 17622
 Ford Mustang GT Premium - Procharged,2016,$44900, 27580
+Ford Mustang Mach 1 Tribute,1971,$500, 25879
 Ford Mustang GT Premium,2006,$23500, 54000
 Ford Mustang GT CONVERTIBLE,1992,$12500, 116000
 Ford Mustang Custom,1967,$175000, 1001
 Ford Mustang COBRA SVT,2004,$28500, 51545
-Mustang LX 5.0,1989,$510.00, 60916
+Mustang LX 5.0,1989,$510, 60916
+Ford Mustang 45th ANNIVERSARY,2009,$5100, 140000
 Ford Mustang ,2008,$18999, 12345
 Ford Mustang Pro Street,1966,$21500, 10000
-Ford Mustang 45th ANNIVERSARY,2009,$5100, 140000
+Ford Mustang ,2018,$24995, 11500
 Ford Mustang ,2007,$24990, 31500
-Ford Mustang ,2014,$28900, 29000
 Ford Mustang ,1970,$99000, 67907
+Ford Mustang ,2014,$28900, 29000
 Ford Mustang GT500,2009,$56500, 2393
 Ford Mustang ,1995,$12500, 27000
+Ford Mustang SVT Cobra,2003,$1000, 23650
 Ford Mustang Shelby GT350,2016,$54995, 4920
+Ford Mustang V6 Premium 6MT,2014,$16900, 60481
 Ford Mustang Bullitt,2019,$47999, 3189
 Ford Mustang SHELBY GT500,2009,$33500, 17244
 Ford Mustang EcoBoost Premium,2016,$11200, 57661
@@ -468,6 +468,7 @@ Ford Mustang Shelby GT500KR,2009,$61900, 1731
 Ford Mustang COBRA SVT,2001,$15000, 45000
 Ford Mustang Boss 302 Tribute,1970,$41500, 21803
 Ford Mustang Shelby Super Snake,2017,$103500, 527
+Ford Mustang ,2017,$59995, 3258
 Ford Mustang ,1988,$5900, 68429
 Ford Mustang 2dr Coupe GT,2011,$17995, 106577
 Ford Mustang GT Premium w/ Upgrades!,2013,$25995, 38562
@@ -483,8 +484,8 @@ Ford Mustang Bullitt Fastback,2019,$46800, 115
 Ford Mustang ,2007,$39990, 17363
 Ford Mustang ,2001,$9700, 120000
 Ford Mustang ,2004,$26750, 6600
-Ford Mustang EcoBoost Premium,2016,$21929, 33639
 Ford Mustang EcoBoost,2020,$18950, 1668
+Ford Mustang EcoBoost Premium,2016,$21929, 33639
 Ford Mustang ,1965,$21000, 26002
 Ford Mustang COBRA SVT,1999,$14000, 27355
 Ford Mustang 5.0 4-Speed,1965,$21500, 1238
@@ -498,4 +499,3 @@ Ford Mustang ,2013,$46999, 12673
 Ford Mustang GT,2016,$27499, 69504
 Ford Mustang Shelby GT-H Heritage Edition Convertible,2019,$104900, 2464
 Ford Mustang SHELBY GT500,2007,$60900, 4789
-Ford Mustang ,1999,$18800, 57000

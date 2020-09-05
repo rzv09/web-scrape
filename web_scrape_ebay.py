@@ -82,8 +82,16 @@ def get_and_write_info(webPage, file):
 
 		#price = divPrice.span.contents[0].split(",")
 		if len(price) == 1:
-			formatted_price = price[0]
+			pos = 0
+			# delete dot from price for easier data processing
+			for ch in price[0]:
+				if ch == '.':
+					no_dot_price = price[0][:pos]
+					break
+				pos+=1
+			formatted_price = no_dot_price
 		else:
+			# delete dot from the price for easier data processing
 			pos = 0
 			for ch in price[1]:
 				if ch == '.':
