@@ -1,4 +1,5 @@
 """
+file: web_scrape_ebay.py
 description: This application collects data from ebay based on the search request:
 e.g. request such as "Honda Accord" will collect all the data (model, year of manufacturing,
 price, mileage) related to this make and model and write it to a csv file.

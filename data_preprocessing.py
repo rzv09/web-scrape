@@ -7,6 +7,7 @@ author: Raman Zatsarenko rzv090701@gmail.com
 import csv
 import numpy
 
+
 def read_csv(filename):
     """
     appends data from a csv to an array
@@ -17,44 +18,43 @@ def read_csv(filename):
     """
 
     vehicles = []
-
+    prices = []
     with open(filename) as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         line_count = 0
         for row in csv_reader:
-            current_vehicle = []
+            current_vehicle_features = []
             if line_count == 0:
                 print(f'Column names are {", ".join(row)}')
             else:
                 # get year of manufacturing
                 try:
-                    year_of_man = int(row[1])
+                    year_of_man = int(row[1]) / 1000
                     # current_vehicle.append(int(row[1]))
                     # current_vehicle.append(int(row[2][1:]))
                     # current_vehicle.append(int(row[3]))
                 except ValueError:
                     year_of_man = 0
                 finally:
-                    current_vehicle.append(year_of_man)
+                    current_vehicle_features.append(year_of_man)
                 # get price
                 try:
-                    price = int(row[2][1:])
+                    price = int(row[2][1:]) / 1000
                 except ValueError:
                     price = 0
-                finally:
-                    current_vehicle.append(price)
                 # get mileage
                 try:
-                    mileage = int(row[3])
+                    mileage = int(row[3]) / 10000
                 except ValueError:
                     mileage = 0
                 finally:
-                    current_vehicle.append(mileage)
+                    current_vehicle_features.append(mileage)
 
                 # append to all vehicles
-                vehicles.append(current_vehicle)
+                vehicles.append(current_vehicle_features)
+                prices.append(price)
             line_count += 1
-    return vehicles
+    return vehicles, prices
 
 
 def normalize_data(data):
@@ -65,17 +65,11 @@ def normalize_data(data):
     :param data: python list of valid str values
     :return: numpy array of normalized values
     """
-    normalized_data = []
-
-    for val in data:
-        int_val = int(val[1:])/10000
-        # print(int_val)
-        normalized_data.append(int_val)
 
     # 2/3 of all data is used for training
-    train_data = numpy.array(normalized_data[:int(len(normalized_data)*0.66)])
+    train_data = numpy.array(data[:int(len(data)*0.66)], dtype='float64')
     # 1/3 of all data is used for testing
-    test_data = numpy.array(normalized_data[int(len(normalized_data)*0.66):])
+    test_data = numpy.array(data[int(len(data)*0.66):], dtype='float64')
 
     # use values computed on train data to normalize train and test data
     mean = train_data.mean(axis=0)
@@ -88,14 +82,30 @@ def normalize_data(data):
 
     return train_data, test_data
 
+
+def partition_targets(target_prices):
+    """
+    partitions the prices data into test_targets and train_targets
+    :param target_prices: a list of target prices
+    :return: train_targets, test_targets
+    """
+    train_targets = numpy.array(target_prices[:int(len(target_prices)*0.66)], dtype='float64')
+    test_targets = numpy.array(target_prices[int(len(target_prices)*0.66):], dtype='float64')
+    print(train_targets.shape)
+    print(test_targets.shape)
+    return train_targets, test_targets
+
+
 def main():
     filename = 'vehicle_info.csv'
-    vehicles = read_csv(filename)
+    vehicles, target_prices = read_csv(filename)
     print(vehicles)
     print(len(vehicles))
-    # train_data, test_data = normalize_data(prices)
-    # print(len(train_data))
-    # print(len(test_data))
+    train_data, test_data = normalize_data(vehicles)
+    print(train_data[0])
+    print(test_data.shape)
+    partition_targets(target_prices)
+
 
 if __name__ == '__main__':
     main()
